@@ -1,4 +1,5 @@
 "use strict";
+var _a;
 let phone = 123456789;
 let user_name = "Abrar";
 let total_user_choices = [1, 2, 3];
@@ -44,4 +45,19 @@ let textBox = {
     resize: () => { }
 };
 let tShirtSize = 50;
+function greeting(name) {
+    if (name)
+        console.log(name.toUpperCase);
+    else
+        console.log("Holla!");
+}
+greeting(null);
+function getCustomer(id) {
+    return id === 0 ? null : { birthday: new Date() };
+}
+;
+let customer = getCustomer(1);
+console.log((_a = customer === null || customer === void 0 ? void 0 : customer.birthday) === null || _a === void 0 ? void 0 : _a.getFullYear());
+let log = null;
+console.log(log === null || log === void 0 ? void 0 : log('a'));
 //# sourceMappingURL=index.js.map
